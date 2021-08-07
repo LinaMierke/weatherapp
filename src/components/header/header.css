@@ -1,0 +1,18 @@
+.button {
+  background-color: #259f5c;
+  padding: 10px 24px;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+input{
+    width: 130px;
+    height: 30px;
+}

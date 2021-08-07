@@ -1,20 +1,25 @@
 import React from "react";
 import { useState } from "react";
+import "./header.css";
+
 export default function Header(props) {
-    console.log(props)
-  const [searchedValue, setSearchedValue] = useState("");
+  const [searchValue, setSearchValue] = useState("");
+
   const handleInput = (e) => {
     e.preventDefault();
-    setSearchedValue(e.target.value);
+    setSearchValue(e.target.value);
   };
   const handleClick = (e) => {
     e.preventDefault();
-    props.fetchWeatherData(searchedValue);
+    props.fetchWeatherData();
   };
   return (
     <div>
-      <input type="text" placeholder="Title" onChange={handleInput} />
-      <button onClick={handleClick}> Search</button>
+      <input type="text" placeholder="zip or city" onChange={handleInput} />
+      <button className="button" style={{}} onClick={handleClick}>
+        {" "}
+        Search
+      </button>
     </div>
   );
 }
