@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import "./header.css";
+import "./search.css";
 
-export default function Header(props) {
+export default function Search(props) {
   const [searchValue, setSearchValue] = useState("");
 
   const handleInput = (e) => {
@@ -16,6 +16,7 @@ export default function Header(props) {
   };
   return (
     <div>
+      <h1>Enter city or zip code</h1>
       <input type="text" placeholder="zip or city" onChange={handleInput} />
       <button className="button" style={{}} onClick={handleClick}>
         {" "}

@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata");
-
+body {
+  margin: 10em;
+}
 .title {
   font-family: "Prata", "Serif";
   color: black;
 }
-/* .shape {
-  border-radius: 5px;
-  background-color: green;
-  height: 150px;
-  width: 150px;
-  float: right;
-} */
+.content {
+  display: flex;
+  align-content: space-between;
+}
+
+.search {
+  font-size: 22px;
+}

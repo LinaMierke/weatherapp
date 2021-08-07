@@ -1,1 +1,11 @@
 
+.weather {
+    height: 22em;
+    margin-left: 122px;
+    margin-right: 211px;
+    border: 3px #4caf50 solid;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    font-size: 20px;
+    border-radius: 9%;
+    padding: 20px;
+  }

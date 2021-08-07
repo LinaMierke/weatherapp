@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Header from "../src/components/header/Header";
+import Search from "./components/header/Search";
 import Weather from "../src/components/weather/Weather";
 import "./App.css";
-
-
 
 export default function App() {
   const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
@@ -17,28 +15,21 @@ export default function App() {
     fetch(URL)
       .then((response) => response.json())
       .then((jsonData) => setWeatherData(jsonData));
-    // .then(async (response) => {
-    //   try {
-    //     const data = await response.json();
-    //     console.log("response data?", data);
-    //   } catch (error) {
-    //     console.log("Error happened here!");
-    //     console.error(error);
-    //   }
-    // });
   };
+
   useEffect(() => {
     fetchWeatherData("22314");
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <div className="main">
       <div className="title" style={{ fontSize: "4em" }}>
         <p> weather moves </p>
       </div>
-      <div className="shape"></div>
 
-      <Header fetchWeatherData={fetchWeatherData} />
-      <Weather title={"Current Weather"} weatherData={weatherData} />
+      <div className="content">
+        <Search fetchWeatherData={fetchWeatherData} />
+        <Weather title={"Current Weather"} weatherData={weatherData} />
+      </div>
     </div>
   );
 }

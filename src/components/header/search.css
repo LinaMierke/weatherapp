@@ -1,5 +1,6 @@
 .button {
   background-color: #259f5c;
+  margin-left: 20px;
   padding: 10px 24px;
   color: white;
   border-radius: 8px;
@@ -12,7 +13,12 @@
   background-color: #4caf50; /* Green */
   color: white;
 }
-input{
-    width: 130px;
-    height: 30px;
+
+input {
+  width: 130px;
+  height: 40px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  transition: width 0.4s ease-in-out;
 }

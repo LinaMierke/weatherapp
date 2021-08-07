@@ -77,3 +77,4 @@ https://www.freepik.com/premium-vector/weather-meteorology-climate-flat-icon-set
 
 
 # hide my keyyy
+// eslint-disable-line react-hooks/exhaustive-deps
