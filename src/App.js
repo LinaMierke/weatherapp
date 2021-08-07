@@ -27,7 +27,6 @@ export default function App() {
   useEffect(() => {
     fetchWeatherData("22314");
   }, []);
-console.log(weatherData)
   return (
     <div className="main">
       <div className="title" style={{ fontSize: "4em" }}>

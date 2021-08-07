@@ -3,17 +3,16 @@ import { useState } from "react";
 import "./header.css";
 
 export default function Header(props) {
-    console.log("hi header",props)
   const [searchValue, setSearchValue] = useState("");
 
   const handleInput = (e) => {
     e.preventDefault();
     setSearchValue(e.target.value);
   };
-  
+
   const handleClick = (e) => {
     e.preventDefault();
-    props.fetchWeatherData(searchValue)
+    props.fetchWeatherData(searchValue);
   };
   return (
     <div>

@@ -1,14 +1,18 @@
-import React from "react";
-import WeatherCard from "./WeatherCard"
+import React, { useState, useEffect } from "react";
+import WeatherCard from "./WeatherCard";
 
 export default function Weather(props) {
- console.log("card", props.weatherData)
+  console.log("weather", props);
+  const [currentWeather, setCurrentWeather] = useState([]);
+  useEffect(() => {
+    setCurrentWeather(props.weatherData);
+  }, [props.weatherData]);
+  const newWeather =  <WeatherCard {...currentWeather}  />;
+  console.log("si",currentWeather)
   return (
-  
     <div>
-          <WeatherCard weather={props.weatherData}/>
-      
-      
+      <h1> Buenas Buenas</h1>
+      {newWeather}
     </div>
   );
 }
