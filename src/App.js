@@ -10,7 +10,7 @@ export default function App() {
     //if is a zip run zip or q for value
     const usezipparam =
       searchValue.length === 5 ? `zip=${searchValue}` : `q=${searchValue}`;
-    let URL = `https://api.openweathermap.org/data/2.5/weather?${usezipparam},us&appid=1cb4dbc4614fb4f8a145c1f3bf20f9d2`;
+    let URL = `https://api.openweathermap.org/data/2.5/weather?units=imperial&${usezipparam}&cnt=7,us&appid=1cb4dbc4614fb4f8a145c1f3bf20f9d2`;
     fetch(URL)
       .then((response) => response.json())
       .then((jsonData) => setWeatherData(jsonData));

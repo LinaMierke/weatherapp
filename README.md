@@ -69,3 +69,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # weatherapp
+
+
+
+weather icons: 
+https://www.freepik.com/premium-vector/weather-meteorology-climate-flat-icon-set-includes-sun-cloud-snow-rain_6120636.htm#page=1&query=weather&position=23
+
+
+
