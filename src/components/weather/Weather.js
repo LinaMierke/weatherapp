@@ -29,12 +29,11 @@ export default function Weather(props) {
 
   return (
     <div className="content">
-      <div className="weather">
-        <div style={{ fontSize: "34px" }}> {location}</div>
-<div style={{backgroundImage:`url("https://i.imgur.com/7iFFgxg.png")`, backgroundRepeat:'no-repeat', height:'150px', backgroundSize:'65% 85%'}}>
-  
-</div>
-        <h1> {currentTemprature}</h1>
+      <div className="card">
+        <div style={{ fontSize: "24px" }}> {location}</div>
+        <div style={{ fontSize: "55px", fontWeight: "600" }}>
+          {currentTemprature}
+        </div>
         <div> Weather Description: {weatherDescription}</div>
         <div> Minimun Temperature: {minTemprature}</div>
         <div> Max temperature Description: {maxTemprature}</div>

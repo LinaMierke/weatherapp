@@ -1,9 +1,9 @@
 import React from "react";
-
+import './days.css'
 export default function Days() {
   
   return (
-    <div>
+    <div className="card2">
       <h2> 7 days</h2>
       <h2> Temprature</h2>
     </div>
