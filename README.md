@@ -4,12 +4,8 @@
 
 ---
 
-Weather app was created as a hometake assigment and a great practice using ReactJS and learning more about the API, callbacks, passong props, using the UseEffect and useState. Here is the deployed version in Netlify
+Weather app was created as a hometake assigment and a great practice using ReactJS and learning more about the API, callbacks, passong props, using the UseEffect and useState. 
 
-```
-https://weathermoves.netlify.app/
-
-```
 
 ## Back-End API
 
