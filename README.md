@@ -4,11 +4,9 @@
 
 ---
 
-Weather app was created as a hometake assigment and a great practice using ReactJS and learning more about the API, callbacks, passong props, using the UseEffect and useState. 
-```
-https://610ffb058e155c00adfb14a6--weathermoves.netlify.app/
+Weather app was created as a hometake assigment and a great practice using ReactJS and learning more about the API, callbacks, passong props, using the UseEffect and useState.
 
-```
+[www.weathermoves.com](https://610ffb058e155c00adfb14a6--weathermoves.netlify.app/)
 
 ## Back-End API
 
@@ -29,7 +27,7 @@ $ npm install
 $ npm start
 ```
 
-### `npm start`
+## npm start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
