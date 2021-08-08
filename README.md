@@ -4,10 +4,10 @@
 
 ---
 
-Weather app was created as a hometake assigment and a great practice using ReactJS and learning more about the API, callbacks, passong props, using the UseEffect and useState. Here is the deployed version
+Weather app was created as a hometake assigment and a great practice using ReactJS and learning more about the API, callbacks, passong props, using the UseEffect and useState. Here is the deployed version in Netlify
 
 ```
-https://610f7558fef1520a0fb641fc--lucid-panini-97128f.netlify.app
+https://weathermoves.netlify.app/
 
 ```
 
@@ -62,6 +62,7 @@ The search folder contains the base Search.js where all the information is start
 
 A list of technologies used within the project:
 
+- [Netlify](https://app.netlify.com/)
 - [Freepik](https://www.freepik.com/psd/banner): Picture source & then modifided by:
 - [Photoshop](https://adobecloud.com): Version 9.3
 - [Illustrator](https://adobecloud.com): Version 9.3
