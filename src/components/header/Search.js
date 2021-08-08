@@ -16,10 +16,9 @@ export default function Search(props) {
   };
   return (
     <div>
-      <h1>Enter city or zip code</h1>
+      <h2>Enter city or zip code</h2>
       <input type="text" placeholder="zip or city" onChange={handleInput} />
       <button className="button" style={{}} onClick={handleClick}>
-        {" "}
         Search
       </button>
     </div>

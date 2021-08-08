@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Days from "./Days";
 import "./weather.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faWind,
+  faTemperatureLow,
+  faTemperatureHigh,
+  faRainbow,
+  faTint,
+  // faWater,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Weather(props) {
   const [currentWeather, setCurrentWeather] = useState([]);
@@ -30,18 +39,43 @@ export default function Weather(props) {
   return (
     <div className="content">
       <div className="card">
-        <div style={{ fontSize: "24px" }}> {location}</div>
-        <div style={{ fontSize: "55px", fontWeight: "600" }}>
-          {currentTemprature}
+        <div style={{ fontSize: "24px" }}>{location}</div>
+        <br />
+        <div style={{ fontSize: "64px", fontWeight: "600" }}>
+          {currentTemprature}˚
         </div>
-        <div> Weather Description: {weatherDescription}</div>
-        <div> Minimun Temperature: {minTemprature}</div>
-        <div> Max temperature Description: {maxTemprature}</div>
-        <div> Wind speed: {windSpeed}</div>
-        <div> precipitation</div>
-        <div> Humidity:{humidity} </div>
+        <br />
+        <div>
+          <FontAwesomeIcon icon={faRainbow} />
+          <br />
+          {weatherDescription}
+        </div>
+        <div style={{ fontTransform: "uppercase" }}>
+          <FontAwesomeIcon icon={faWind} />
+          <br />
+          {windSpeed}
+        </div>
+        <div>
+          <FontAwesomeIcon icon={faTemperatureLow} />
+          <br />
+          {minTemprature}
+        </div>
+        <div>
+          <FontAwesomeIcon icon={faTemperatureHigh} />
+          <br />
+          {maxTemprature}
+        </div>
+
+        {/* <div>
+          <FontAwesomeIcon icon={faWater} />
+          <br />
+        </div> */}
+        <div>
+          <FontAwesomeIcon icon={faTint} /> <br />
+          {humidity}
+        </div>
       </div>
-      <Days style={{ marginLeft: "300px" }} />
+      <Days data={currentWeather} style={{ marginLeft: "300px" }} />
     </div>
   );
 }

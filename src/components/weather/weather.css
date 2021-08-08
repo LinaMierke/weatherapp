@@ -1,5 +1,6 @@
 .card {
   height: 22em;
+  width: 12em;
   margin-left: 122px;
   margin-right: 21px;
   border: 3px white solid;
@@ -14,4 +15,5 @@
     rgba(241, 250, 244, 1) 21%,
     rgba(241, 250, 244, 1) 38%
   );
+  
 }

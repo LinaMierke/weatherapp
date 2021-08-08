@@ -11,7 +11,7 @@ export default function App() {
     //if is a zip run zip or q for value
     const usezipparam =
       searchValue.length === 5 ? `zip=${searchValue}` : `q=${searchValue}`;
-    let URL = `https://api.openweathermap.org/data/2.5/weather?units=imperial&${usezipparam}&cnt=7,us&appid=${API_KEY}`;
+    let URL = `https://api.openweathermap.org/data/2.5/weather?&cnt=7&units=imperial&${usezipparam},us&appid=${API_KEY}`;
     fetch(URL)
       .then((response) => response.json())
       .then((jsonData) => setWeatherData(jsonData));
@@ -22,14 +22,14 @@ export default function App() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <div className="main">
-      <div className="title" style={{ fontSize: "4em" }}>
-        <p> weather moves </p>
+      <div className="title" style={{ fontSize: "4em", fontWeight:'550', fontFamily:'Patra' }}>
+        weather moves 
       </div>
-
       <div className="content">
         <Search fetchWeatherData={fetchWeatherData} />
         <Weather title={"Current Weather"} weatherData={weatherData} />
       </div>
+      
     </div>
   );
 }

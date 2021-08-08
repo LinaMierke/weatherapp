@@ -80,3 +80,5 @@ https://www.freepik.com/premium-vector/weather-meteorology-climate-flat-icon-set
 // eslint-disable-line react-hooks/exhaustive-deps
 
 https://cssgradient.io/
+
+https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react
