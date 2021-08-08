@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata");
 body {
   margin: 4em;
-  background-image: url("https://i.imgur.com/E4Qy6mg.png")
-  
+  background-image: url("https://i.imgur.com/E4Qy6mg.png");
 }
 .title {
   font-family: "Prata", "Serif";
@@ -16,4 +15,15 @@ body {
 
 .search {
   font-size: 22px;
+}
+@media (max-width: 767px) {
+  .App {
+    flex: auto;
+    margin: 0;
+    align-items: left;
+    height: 100vw;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
 }
