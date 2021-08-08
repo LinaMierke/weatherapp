@@ -1,84 +1,67 @@
-# Getting Started with Create React App
+## Weather Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## General Info
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+Weather app was created as a hometake assigment and a great practice using ReactJS and learning more about the API, callbacks, passong props, using the UseEffect and useState. Here is the deployed version
 
-### `npm start`
+```
+https://wineoclock.netlify.app/
+
+```
+
+## Back-End API
+
+---
+
+The initial API for this project is API openWeather `https://openweathermap.org/api` there I initially used the doc for Current Weather Data, but then find the Daily Forecast 16 days `https://api.openweathermap.org/data/2.5/forecast?&cnt=7&units=imperial&${usezipparam}&appid=${API_KEY} `
+
+## Installation
+
+---
+
+A little intro about the installation.
+
+```
+$ git clone https://github.com/LinaMierke/weatherapp
+$ cd weather
+$ npm install
+$ npm start
+```
+# `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+Side information: To use the application in a special environment use `http://localhost:3000/` to see the landing page.
 
-### `npm test`
+## Weather Folder
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+In the folder Weather you will find two different components: Weather.js and Days.js. Those are the main components for my application and where the data is passing and showing.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Seach Folder
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The search folder contains the base Search.js where all the information is starting to pass to modify the weather components.
 
-### `npm run eject`
+## Technologies & Sources
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A list of technologies used within the project:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [Freepik](https://www.freepik.com/psd/banner): Picture source & then modifided by:
+- [Photoshop](https://adobecloud.com): Version 9.3
+- [Illustrator](https://adobecloud.com): Version 9.3
+- [Icons](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react): Used and modifided
+- [CSSgradient](https://cssgradient.io/): Gradient
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# weatherapp
-
-
-
-weather icons: 
-https://www.freepik.com/premium-vector/weather-meteorology-climate-flat-icon-set-includes-sun-cloud-snow-rain_6120636.htm#page=1&query=weather&position=23
-
-
-# hide my keyyy
-// eslint-disable-line react-hooks/exhaustive-deps
-
-https://cssgradient.io/
-
-https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react
+Private License @ 2021

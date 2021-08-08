@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Search from "./components/header/Search";
+import Search from "./components/search/Search";
 import Weather from "../src/components/weather/Weather";
 import "./App.css";
 
@@ -22,14 +22,18 @@ export default function App() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <div className="main">
-      <div className="title" style={{ fontSize: "4em", fontWeight:'550', fontFamily:'Patra' }}>
-        weather moves 
+      <div
+        className="title"
+        style={{ fontSize: "4em", fontWeight: "550", fontFamily: "Patra" }}
+      >
+        <a href= "https://movesfinancial.com/" target="_blank" style={{textDecoration:"none", color: "black" }}>
+          weather moves
+        </a>
       </div>
       <div className="content">
         <Search fetchWeatherData={fetchWeatherData} />
         <Weather title={"Current Weather"} weatherData={weatherData} />
       </div>
-      
     </div>
   );
 }
