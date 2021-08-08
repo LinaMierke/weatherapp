@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Search from "./components/search/Search";
+import Search from "../src/components/Search/Search";
 import Weather from "../src/components/weather/Weather";
 import "./App.css";
 
 export default function App() {
   const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
   const [weatherData, setWeatherData] = useState([]);
+
   const fetchWeatherData = (searchValue = null) => {
     //if is a zip run zip or q for value
     const usezipparam =
@@ -26,7 +27,12 @@ export default function App() {
         className="title"
         style={{ fontSize: "4em", fontWeight: "550", fontFamily: "Patra" }}
       >
-        <a href= "https://movesfinancial.com/" target="_blank" style={{textDecoration:"none", color: "black" }}>
+        <a
+          href="https://movesfinancial.com/"
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: "none", color: "black" }}
+        >
           weather moves
         </a>
       </div>

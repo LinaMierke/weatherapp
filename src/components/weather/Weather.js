@@ -65,8 +65,7 @@ export default function Weather(props) {
           <br />
           {maxTemprature}
         </div>
-
-        {/* <div>
+        {/* <div> Need to figure precipitation
           <FontAwesomeIcon icon={faWater} />
           <br />
         </div> */}

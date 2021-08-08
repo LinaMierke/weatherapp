@@ -29,6 +29,7 @@ $ cd weather
 $ npm install
 $ npm start
 ```
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -49,6 +50,11 @@ In the folder Weather you will find two different components: Weather.js and Day
 ---
 
 The search folder contains the base Search.js where all the information is starting to pass to modify the weather components.
+
+## To Do
+
+- Add the new API and figure out the 7 days. I read this information use could be useful \*[Error Catching](https://reactjs.org/docs/error-boundaries.html)
+- Add interactivity to the page with the corresponding image for the weather
 
 ## Technologies & Sources
 
