@@ -7,7 +7,7 @@
 Weather app was created as a hometake assigment and a great practice using ReactJS and learning more about the API, callbacks, passong props, using the UseEffect and useState. Here is the deployed version
 
 ```
-https://wineoclock.netlify.app/
+https://610f7558fef1520a0fb641fc--lucid-panini-97128f.netlify.app
 
 ```
 
