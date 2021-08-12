@@ -6,7 +6,7 @@
 
 Weather app was created as a hometake assigment and a great practice using ReactJS and learning more about the API, callbacks, passong props, using the UseEffect and useState.
 
-[www.weathermoves.com](https://610ffb058e155c00adfb14a6--weathermoves.netlify.app/)
+
 
 ## Back-End API
 
