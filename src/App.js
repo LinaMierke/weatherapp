@@ -34,16 +34,17 @@ export default function App() {
   }, []);
   if (loading) return "Loading...";
   if (error) return "Error!...";
+
   console.log("hola:", weatherData);
   return (
     <div className="main">
       <div className="title" style={{ fontSize: "4em" }}>
-        <p> weather moves </p>
+        <p> Weather  </p>
       </div>
       <div className="shape"></div>
 
       <Search setWeatherData={weatherData} />
-      <Weather title={"Current Weather"} weatherData={fetchWeatherData} />
+      <Weather  weatherData={weatherData} />
     </div>
   );
 }

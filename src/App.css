@@ -16,7 +16,7 @@ body {
 .search {
   font-size: 22px;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .App {
     flex: auto;
     margin: 0;
@@ -26,4 +26,4 @@ body {
     display: block;
     position: relative;
   }
-}
+} */
